@@ -1,0 +1,58 @@
+﻿@model List<ObservationObject>
+@{
+    ViewBag.Title = "Index";
+    <meta http-equiv="refresh" content="10">
+}
+<div>
+    <h2>Index</h2>
+    <p>@ViewBag.Item</p>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    @Html.Label("ActiveStatus")
+                </th>
+                <th>
+                    @Html.Label("Type")
+                </th>
+                <th>
+                    @Html.Label("Name")
+                </th>
+                <th>
+                    @Html.Label("Message")
+                </th>
+                <th>
+                    <a asp-controller="View" asp-action="CreateNew">Create</a>
+                    <a asp-controller="View" asp-action="IndexWithDeleted">IndexWithDeleted</a>
+                    <a asp-controller="Setting" asp-action="Edit">Edit</a>
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (ObservationObject item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(x => item.ActiveStatus)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(x => item.ProgrammType)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(x => item.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(x => item.Message)
+                    </td>
+                    <td>
+                        <a asp-controller="View" asp-action="EnableDisable" asp-route-name="@item.Id">Enable/Disable</a>
+                    </td>
+                    <td>
+                        <a asp-controller="View" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

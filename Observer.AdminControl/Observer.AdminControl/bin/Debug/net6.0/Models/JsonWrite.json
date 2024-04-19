@@ -1,0 +1,24 @@
+﻿{
+  "objects": [
+    {
+      "name": "Process",
+      "message": "",
+      "serviceStatus": 1
+    },
+    {
+      "name": "Process",
+      "message": "",
+      "serviceStatus": 1
+    },
+    {
+      "name": "Service",
+      "message": "",
+      "serviceStatus": 2
+    },
+    {
+      "name": "Process",
+      "message": "",
+      "serviceStatus": 1
+    }
+  ]
+}

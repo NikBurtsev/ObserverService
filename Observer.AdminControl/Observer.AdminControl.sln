@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Observer.AdminControl", "Observer.AdminControl\Observer.AdminControl.csproj", "{366A5190-6F65-47FE-AFD6-39EBEEEAE0E4}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Observer.Data", "Observer.Data\Observer.Data.shproj", "{E5B89240-B729-4E4F-8ADD-D5887E329659}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Observer.Watcher", "..\Observer\Observer.Watcher\Observer.Watcher.csproj", "{E6217760-A42C-4242-94D0-C2197C546CAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{366A5190-6F65-47FE-AFD6-39EBEEEAE0E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{366A5190-6F65-47FE-AFD6-39EBEEEAE0E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{366A5190-6F65-47FE-AFD6-39EBEEEAE0E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{366A5190-6F65-47FE-AFD6-39EBEEEAE0E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6217760-A42C-4242-94D0-C2197C546CAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6217760-A42C-4242-94D0-C2197C546CAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6217760-A42C-4242-94D0-C2197C546CAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6217760-A42C-4242-94D0-C2197C546CAB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FDCAD8E8-7CF7-4FA8-8018-ECEB22F033B3}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Observer.Data\Observer.Data.projitems*{366a5190-6f65-47fe-afd6-39ebeeeae0e4}*SharedItemsImports = 5
+		Observer.Data\Observer.Data.projitems*{e5b89240-b729-4e4f-8add-d5887e329659}*SharedItemsImports = 13
+		..\Observer\Observer.Data\Observer.Data.projitems*{e6217760-a42c-4242-94d0-c2197c546cab}*SharedItemsImports = 5
+	EndGlobalSection
+EndGlobal
